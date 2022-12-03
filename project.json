@@ -1,0 +1,27 @@
+{
+  "name": "clusters",
+  "projectType": "library",
+  "sourceRoot": "libs/data/clusters/src",
+  "prefix": "hyperconverged",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/data/clusters"],
+      "options": {
+        "jestConfig": "libs/data/clusters/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/data/clusters/src/**/*.ts",
+          "libs/data/clusters/src/**/*.html"
+        ]
+      },
+      "outputs": ["{options.outputFile}"]
+    }
+  },
+  "tags": []
+}
