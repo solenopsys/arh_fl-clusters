@@ -1,7 +1,7 @@
-import { Action, Selector, State, StateContext } from "@ngxs/store";
-import { Inject, Injectable, InjectionToken } from "@angular/core";
-import { ClusterService } from "./cluster.service";
-import { append, patch } from "@ngxs/store/operators";
+import {Action, Selector, State, StateContext} from "@ngxs/store";
+import {Injectable} from "@angular/core";
+import {ClusterService} from "./cluster.service";
+import {append, patch} from "@ngxs/store/operators";
 
 let hostname = document.location.hostname;
 
