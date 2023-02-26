@@ -1,5 +1,5 @@
 {
-  "name": "clusters",
+  "name": "fl-clusters",
   "projectType": "library",
   "sourceRoot": "packages/libraries/fl-clusters/src",
   "prefix": "sc",
