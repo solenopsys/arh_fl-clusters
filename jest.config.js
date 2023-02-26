@@ -8,7 +8,7 @@ module.exports = {
       stringifyContentPathRegex: '\\.(html|svg)$',
     },
   },
-  coverageDirectory: '../../../coverage/packages/libs/clusters',
+  coverageDirectory: '../../../coverage/packages/libraries/fl-clusters',
   transform: {
     '^.+.(ts|mjs|js|html)$': 'jest-preset-angular',
   },

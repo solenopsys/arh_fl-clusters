@@ -1,14 +1,14 @@
 {
   "name": "clusters",
   "projectType": "library",
-  "sourceRoot": "packages/libs/clusters/src",
+  "sourceRoot": "packages/libraries/fl-clusters/src",
   "prefix": "sc",
   "targets": {
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/packages/libs/clusters"],
+      "outputs": ["coverage/packages/libraries/fl-clusters"],
       "options": {
-        "jestConfig": "packages/libs/clusters/jest.config.js",
+        "jestConfig": "packages/libraries/fl-clusters/jest.config.js",
         "passWithNoTests": true
       }
     },
@@ -16,8 +16,8 @@
       "executor": "@nrwl/linter:eslint",
       "options": {
         "lintFilePatterns": [
-          "packages/libs/clusters/src/**/*.ts",
-          "packages/libs/clusters/src/**/*.html"
+          "packages/libraries/fl-clusters/src/**/*.ts",
+          "packages/libraries/fl-clusters/src/**/*.html"
         ]
       },
       "outputs": ["{options.outputFile}"]

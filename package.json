@@ -1,5 +1,5 @@
 {
-  "name": "@solenopsys/hc-fl-clusters",
+  "name": "@solenopsys/fl-clusters",
   "version": "0.9.1",
   "scripts": {
     "test": "node index.js",
