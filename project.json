@@ -1,12 +1,15 @@
 {
   "name": "fl-clusters",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "projectType": "library",
   "sourceRoot": "packages/libraries/fl-clusters/src",
   "prefix": "sc",
   "targets": {
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/packages/libraries/fl-clusters"],
+      "outputs": [
+        "coverage/packages/libraries/fl-clusters"
+      ],
       "options": {
         "jestConfig": "packages/libraries/fl-clusters/jest.config.js",
         "passWithNoTests": true
@@ -20,7 +23,9 @@
           "packages/libraries/fl-clusters/src/**/*.html"
         ]
       },
-      "outputs": ["{options.outputFile}"]
+      "outputs": [
+        "{options.outputFile}"
+      ]
     }
   },
   "tags": []
