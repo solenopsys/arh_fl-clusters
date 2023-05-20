@@ -41,7 +41,7 @@ export class AddCluster {
   name: "clusters",
   defaults: {
     clusters: [
-      { host:  hostname, title: "This", ssl: false },
+     // { host:  hostname, title: "This", ssl: false },
     //  { host: "hc.alexstorm.solenopsys.org", title: "HomeServer", ssl: false },
       // { host: "hc.jetson2.solenopsys.org", title: "Jetson2", ssl: false },
       // { host: "hc.jetson4.solenopsys.org", title: "Jetson4", ssl: false },
