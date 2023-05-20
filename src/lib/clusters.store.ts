@@ -3,7 +3,7 @@ import {Injectable} from "@angular/core";
 import {ClusterService} from "./cluster.service";
 import {append, patch} from "@ngxs/store/operators";
 
-let hostname = document.location.hostname;
+const hostname = document.location.hostname;
 
 
 export class Cluster {
@@ -15,7 +15,7 @@ export class Cluster {
 export class ClusterStateModel {
   clusters!: Cluster [];
   loaded!: boolean;
-  current!: Cluster;
+  current?: Cluster;
 }
 
 
@@ -49,7 +49,7 @@ export class AddCluster {
       // { host: "hc.garage.solenopsys.org", title: "GarageServer", ssl: false }
     ],
     loaded: false,
-    current: { host: hostname, title:"This"  , ssl: false }
+    current: undefined!
   }
 })
 @Injectable()
@@ -63,7 +63,7 @@ export class ClusterState {
   }
 
   @Selector()
-  static getCurrent(state: ClusterStateModel): Cluster {
+  static getCurrent(state: ClusterStateModel): Cluster|undefined {
     return state.current;
   }
 
@@ -72,7 +72,6 @@ export class ClusterState {
 
     setState({
       ...getState(),
-      // @ts-ignore
       current: getState().clusters.find(g => g.host === host)
     });
   }
