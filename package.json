@@ -1,7 +1,8 @@
 {
   "name": "@solenopsys/fl-clusters",
   "version": "0.1.0",
+  "xs": "lib",
   "scripts": {
-    "build": "ng-packagr -p ng-package.json -c ../../../../tsconfig.packages.json"
+    "build": "xs-pack"
   }
 }
