@@ -3,6 +3,6 @@
   "version": "0.1.0",
   "xs": "lib",
   "scripts": {
-    "build": "ng-packagr -p xs-package.json -c ../../../../tsconfig.packages.json"
+    "build": "ng-packagr -p xs-package.json -c ../../../tsconfig.packages.json"
   }
 }
